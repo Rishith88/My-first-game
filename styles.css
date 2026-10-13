@@ -1,0 +1,148 @@
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+}
+body {
+background: #11182b;
+color: white;
+display: flex;
+justify-content: center;
+min-height: 100vh;
+padding: 16px;
+}
+.wrap {
+width: 520px;
+max-width: 100%;
+text-align: center;
+}
+h1 {
+color: #ffd93d;
+font-size: 32px;
+margin-bottom: 4px;
+}
+.sub {
+color: #9fb2d8;
+margin-bottom: 12px;
+font-size: 14px;
+}
+.hud {
+display: flex;
+gap: 8px;
+justify-content: space-between;
+margin-bottom: 10px;
+}
+.box {
+background: #1e2a45;
+border: 1px solid #33456e;
+border-radius: 8px;
+padding: 8px 4px;
+flex: 1;
+font-size: 13px;
+color: #9fb2d8;
+}
+.box span {
+display: block;
+font-size: 20px;
+color: white;
+font-weight: bold;
+}
+.stage {
+position: relative;
+border-radius: 12px;
+overflow: hidden;
+border: 2px solid #33456e;
+}
+canvas {
+display: block;
+width: 100%;
+background: #0b1224;
+}
+.overlay {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: rgba(5, 10, 25, 0.88);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 10px;
+padding: 20px;
+}
+.overlay h2 {
+color: #ffd93d;
+font-size: 28px;
+}
+.overlay p {
+font-size: 14px;
+color: #cbd6ee;
+}
+.hidden {
+display: none;
+}
+button {
+background: #ffd93d;
+border: none;
+border-radius: 8px;
+padding: 10px 18px;
+font-size: 16px;
+font-weight: bold;
+cursor: pointer;
+color: #222;
+}
+button:hover {
+background: #ffe57a;
+}
+.controls {
+display: flex;
+gap: 8px;
+margin-top: 10px;
+}
+.controls button {
+flex: 1;
+background: #24345a;
+color: white;
+font-size: 14px;
+}
+.controls button:hover {
+background: #2f4475;
+}
+.touch {
+margin-top: 10px;
+display: flex;
+flex-direction: column;
+gap: 6px;
+align-items: center;
+}
+.touch .row {
+display: flex;
+gap: 6px;
+}
+.touch button {
+background: #2b3c66;
+color: white;
+width: 80px;
+padding: 10px 0;
+font-size: 14px;
+}
+.hint {
+margin-top: 8px;
+font-size: 12px;
+color: #7c8db1;
+}
+.tiny {
+font-size: 11px;
+opacity: 0.7;
+}
+@media (max-width: 540px) {
+.hud {
+flex-wrap: wrap;
+}
+.box {
+min-width: 30%;
+}
+}
