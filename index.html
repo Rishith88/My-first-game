@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Star Catcher</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<h1>Star Catcher</h1>
+<p class="sub">Collect stars, dodge red blocks, survive 60 seconds</p>
+<div class="hud">
+<div class="box">Score <span id="score">0</span></div>
+<div class="box">Lives <span id="lives">3</span></div>
+<div class="box">Time <span id="time">60</span></div>
+<div class="box">Level <span id="level">1</span></div>
+<div class="box">Best <span id="best">0</span></div>
+</div>
+<div class="stage">
+<canvas id="game" width="480" height="360"></canvas>
+<div id="startScreen" class="overlay">
+<h2>Ready to Play?</h2>
+<p>Move with arrows or WASD or buttons</p>
+<button id="startBtn">Start Game</button>
+<p class="tiny">10 features: move, score, lives, enemies, stars, timer, levels, pause, sound, best score, restart, mobile</p>
+</div>
+<div id="overScreen" class="overlay hidden">
+<h2 id="overTitle">Game Over</h2>
+<p>Score: <span id="finalScore">0</span></p>
+<p>Best: <span id="finalBest">0</span></p>
+<button id="againBtn">Play Again</button>
+</div>
+</div>
+<div class="controls">
+<button id="pauseBtn">Pause</button>
+<button id="restartBtn">Restart</button>
+<button id="soundBtn">Sound: On</button>
+</div>
+<div class="touch">
+<button data-k="up">Up</button>
+<div class="row">
+<button data-k="left">Left</button>
+<button data-k="down">Down</button>
+<button data-k="right">Right</button>
+</div>
+</div>
+<p class="hint">Press P to pause, M to mute, R to restart</p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
